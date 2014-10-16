@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'https://ruby.taobao.org'
 
 gem 'rails', '4.1.4'
 
@@ -20,6 +20,7 @@ group :development, :test do
   gem 'sqlite3'
   gem 'minitest'
   gem 'thor'
+  gem 'thin'
 end
 
 # Add support for the MySQL
@@ -40,7 +41,7 @@ gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails', '~> 4.0.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-# gem 'therubyracer',  platforms: :ruby
+gem 'therubyracer',  platforms: :ruby
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -66,3 +67,33 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+#Use kaminari page
+gem 'kaminari'
+
+#Use settingslogic
+gem 'settingslogic'
+
+# Use haml template
+gem 'haml-rails'
+
+# Use bootstrap css
+gem 'bootstrap-sass'
+gem 'font-awesome-sass-rails', '~> 3.0.2.2'
+gem 'twitter-bootstrap-rails-confirm', github: 'fxhover/twitter-bootstrap-rails-confirm', branch: 'bootstrap3'
+# Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
+gem 'turbolinks'
+# Use ActiveModel has_secure_password
+gem 'bcrypt', '~> 3.1.7'
+# Use unicorn as the app server
+gem 'unicorn'
+
+#Avatar
+gem 'gravatar_image_tag'
+
+#markdown
+gem 'markdown-toolbar', git: 'git@github.com:fxhover/markdown-toolbar.git'
+gem 'redcarpet'
+
+#file upload
+gem 'simple_fileupload'
+gem 'remotipart'

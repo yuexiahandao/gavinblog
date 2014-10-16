@@ -53,4 +53,49 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+
+  root "blogs#index"
+
+  resources :blogs, only:[:index] do
+    collection do
+      post 'upload_img'
+      get 'set'
+      post 'set_userinfo'
+      get 'set_blog'
+      post 'update_blog'
+      get 'about'
+      get 'change_password'
+      post 'update_password'
+      post 'preview'
+    end
+
+  end
+
+  resources :articles do
+    member do
+      post 'star'
+    end
+
+    resources :comments
+  end
+
+  get 'register' => 'users#register'
+  get 'login' => 'users#login'
+  get 'logout' => 'users#logout'
+  resources :users do
+    collection do
+      get 'register'
+      post 'register_confirm'
+      get 'login'
+      post 'login_confirm'
+      get 'logout'
+      get 'send_active_mail'
+      get 'activation'
+      get 'forget_password'
+      post 'forget_password_confirm'
+      get 'change_pw'
+      post 'change_pw_confirm'
+    end
+  end
+
 end

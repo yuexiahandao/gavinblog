@@ -1,0 +1,9 @@
+- if @result[:status]
+  :plain
+    $("#article_comment_content").val('');
+    $('#no_comments').remove();
+    $('#error_message').remove();
+    $("#paginate").prepend("#{escape_javascript(render partial: 'articles/comment', locals: {comment: @comment})}");
+- else
+  :plain
+    $('#error_message').html("#{@result[:message]}");

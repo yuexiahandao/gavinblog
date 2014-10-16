@@ -1,0 +1,17 @@
+#encoding: utf-8
+defaults: &defaults
+  blog:
+    domain: http://localhost:3000
+    aritcle_page_size: 10
+    comments_page_size: 10
+  mailer:
+    address: smtp.126.com
+    port: 25
+    user_name: yuexiahandao@126.com
+    password: 85802178
+
+development:
+  <<: *defaults
+
+production:
+  <<: *defaults
