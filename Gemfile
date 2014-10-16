@@ -79,7 +79,8 @@ gem 'haml-rails'
 # Use bootstrap css
 gem 'bootstrap-sass'
 gem 'font-awesome-sass-rails', '~> 3.0.2.2'
-gem 'twitter-bootstrap-rails-confirm', github: 'fxhover/twitter-bootstrap-rails-confirm', branch: 'bootstrap3'
+gem 'twitter-bootstrap-rails', '~> 3.2.0'
+#gem 'twitter-bootstrap-rails-confirm', '~> 3.2.0'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 # Use ActiveModel has_secure_password

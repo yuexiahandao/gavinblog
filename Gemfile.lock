@@ -6,7 +6,7 @@ GIT
     twitter-bootstrap-rails-confirm (1.0.2)
 
 GIT
-  remote: git@github.com:fxhover/markdown-toolbar.git
+  remote: git://github.com/fxhover/markdown-toolbar.git
   revision: 5c755649d647fabc953347c2e03a2203cf7d52ff
   specs:
     markdown-toolbar (0.2.4)
