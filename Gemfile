@@ -81,6 +81,7 @@ gem 'bootstrap-sass'
 gem 'font-awesome-sass-rails', '~> 3.0.2.2'
 gem 'twitter-bootstrap-rails', '~> 3.2.0'
 #gem 'twitter-bootstrap-rails-confirm', '~> 3.2.0'
+gem 'twitter-bootstrap-rails-confirm', github: 'fxhover/twitter-bootstrap-rails-confirm', branch: 'bootstrap3'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 # Use ActiveModel has_secure_password
@@ -92,7 +93,7 @@ gem 'unicorn'
 gem 'gravatar_image_tag'
 
 #markdown
-gem 'markdown-toolbar', git: 'git@github.com:fxhover/markdown-toolbar.git'
+gem 'markdown-toolbar', github: 'fxhover/markdown-toolbar'
 gem 'redcarpet'
 
 #file upload
