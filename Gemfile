@@ -1,4 +1,4 @@
-source 'https://ruby.taobao.org'
+source 'https://rubygems.org/'
 
 gem 'rails', '4.1.4'
 
@@ -28,9 +28,9 @@ group :production, :mysql do
   gem 'mysql2'
 end
 
-group :production, :postgresql do
-  gem 'pg'
-end
+#group :production, :postgresql do
+#  gem 'pg'
+#end
 
 ### / OpenShift changes
 
