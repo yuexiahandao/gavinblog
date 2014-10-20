@@ -8,7 +8,7 @@ defaults: &defaults
     address: smtp.126.com
     port: 25
     user_name: yuexiahandao@126.com
-    password: 85802178
+    password: 123sw
 
 development:
   <<: *defaults

@@ -76,6 +76,10 @@ Rails.application.routes.draw do
       post 'star'
     end
 
+    collection do
+      post 'get_content'
+    end
+
     resources :comments
   end
 

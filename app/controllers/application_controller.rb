@@ -41,7 +41,14 @@ class ApplicationController < ActionController::Base
   end
 
   def markdown_parser(content)
-    markdown = Redcarpet::Markdown.new Redcarpet::Render::HTML, autolink: true, tables: true
+    options = {
+      :autolink => true, 
+      :tables => true,
+      :no_intra_emphasis => true,
+      :fenced_code_blocks => true,
+      :disable_indented_code_blocks => true
+    }
+    markdown = Redcarpet::Markdown.new Redcarpet::Render::HTML, options
     markdown.render content
   end
 

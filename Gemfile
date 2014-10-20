@@ -93,7 +93,6 @@ gem 'unicorn'
 gem 'gravatar_image_tag'
 
 #markdown
-gem 'markdown-toolbar', github: 'fxhover/markdown-toolbar'
 gem 'redcarpet'
 
 #file upload

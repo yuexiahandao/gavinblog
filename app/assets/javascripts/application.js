@@ -17,7 +17,7 @@
 //= require twitter/bootstrap/rails/confirm
 //= require html5shiv.min.js
 //= require respond.min.js
-//= require markdown-toolbar
+//= require markdown-toolbar/markdown-toolbar
 //= require jquery.remotipart
 //= require_tree .
 

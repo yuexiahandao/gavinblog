@@ -21,8 +21,8 @@ ActiveRecord::Schema.define(version: 20140908085400) do
     t.datetime "updated_at"
   end
 
-  add_index "article_comments", ["article_id"], name: "index_article_comments_on_article_id", using: :btree
-  add_index "article_comments", ["user_id"], name: "index_article_comments_on_user_id", using: :btree
+  add_index "article_comments", ["article_id"], name: "index_article_comments_on_article_id"
+  add_index "article_comments", ["user_id"], name: "index_article_comments_on_user_id"
 
   create_table "article_stars", force: true do |t|
     t.integer  "article_id"
@@ -31,7 +31,7 @@ ActiveRecord::Schema.define(version: 20140908085400) do
     t.datetime "updated_at"
   end
 
-  add_index "article_stars", ["article_id", "user_id"], name: "index_article_stars_on_article_id_and_user_id", using: :btree
+  add_index "article_stars", ["article_id", "user_id"], name: "index_article_stars_on_article_id_and_user_id"
 
   create_table "article_views", force: true do |t|
     t.integer  "article_id"
@@ -42,7 +42,7 @@ ActiveRecord::Schema.define(version: 20140908085400) do
     t.datetime "updated_at"
   end
 
-  add_index "article_views", ["article_id", "ip", "created_at"], name: "index_article_views_on_article_id_and_ip_and_created_at", using: :btree
+  add_index "article_views", ["article_id", "ip", "created_at"], name: "index_article_views_on_article_id_and_ip_and_created_at"
 
   create_table "articles", force: true do |t|
     t.integer  "user_id"
@@ -58,12 +58,12 @@ ActiveRecord::Schema.define(version: 20140908085400) do
     t.integer  "category_id"
   end
 
-  add_index "articles", ["comments_count"], name: "index_articles_on_comments_count", using: :btree
-  add_index "articles", ["created_at"], name: "index_articles_on_created_at", using: :btree
-  add_index "articles", ["star_count"], name: "index_articles_on_star_count", using: :btree
-  add_index "articles", ["title"], name: "index_articles_on_title", using: :btree
-  add_index "articles", ["user_id"], name: "index_articles_on_user_id", using: :btree
-  add_index "articles", ["view_count"], name: "index_articles_on_view_count", using: :btree
+  add_index "articles", ["comments_count"], name: "index_articles_on_comments_count"
+  add_index "articles", ["created_at"], name: "index_articles_on_created_at"
+  add_index "articles", ["star_count"], name: "index_articles_on_star_count"
+  add_index "articles", ["title"], name: "index_articles_on_title"
+  add_index "articles", ["user_id"], name: "index_articles_on_user_id"
+  add_index "articles", ["view_count"], name: "index_articles_on_view_count"
 
   create_table "blog_info", force: true do |t|
     t.string "name"
@@ -79,7 +79,7 @@ ActiveRecord::Schema.define(version: 20140908085400) do
     t.datetime "updated_at"
   end
 
-  add_index "categories", ["articles_count"], name: "index_categories_on_articles_count", using: :btree
+  add_index "categories", ["articles_count"], name: "index_categories_on_articles_count"
 
   create_table "user_actives", force: true do |t|
     t.integer  "user_id"
@@ -104,8 +104,8 @@ ActiveRecord::Schema.define(version: 20140908085400) do
     t.boolean  "activation"
   end
 
-  add_index "users", ["email"], name: "index_users_on_email", using: :btree
-  add_index "users", ["nick_name"], name: "index_users_on_nick_name", using: :btree
-  add_index "users", ["username"], name: "index_users_on_username", using: :btree
+  add_index "users", ["email"], name: "index_users_on_email"
+  add_index "users", ["nick_name"], name: "index_users_on_nick_name"
+  add_index "users", ["username"], name: "index_users_on_username"
 
 end

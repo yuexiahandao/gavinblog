@@ -58,6 +58,17 @@ class ArticlesController < ApplicationController
     end
   end
 
+  def get_content
+    id = params[:article_id]
+    @article = Article.find(id)
+    result = {status: false, message: ''}
+    if @article.present?
+      result[:status] = true
+      result[:message] = markdown_parser(@article.content)
+    end
+    render json: result.to_json
+  end
+
   def edit
 
   end

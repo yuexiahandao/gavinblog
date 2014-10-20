@@ -55,3 +55,12 @@
         = link_to '登录', login_path
         后可评论
 
+
+:javascript
+  $(function(){
+      $.post('/articles/get_content', {article_id: "#{@article.id}"}, function(data){
+        if (data.status){
+           $(".panel-body").html(data.message);
+        }
+      });
+  });

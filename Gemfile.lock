@@ -1,10 +1,4 @@
 GIT
-  remote: git://github.com/fxhover/markdown-toolbar.git
-  revision: 5c755649d647fabc953347c2e03a2203cf7d52ff
-  specs:
-    markdown-toolbar (0.2.4)
-
-GIT
   remote: git://github.com/fxhover/twitter-bootstrap-rails-confirm.git
   revision: 92dd750dd04f492526aca894c5ec1b321a6e25a9
   branch: bootstrap3
@@ -179,7 +173,6 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   kaminari
-  markdown-toolbar!
   minitest
   mysql2
   rails (= 4.1.4)
