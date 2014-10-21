@@ -38,7 +38,7 @@
       = @article.source
 
   .panel.panel-dfault
-    .panel-body
+    .panel-body.show-article-content
       %p
         = raw markdown_parser(@article.content)
 
@@ -60,7 +60,7 @@
   $(function(){
       $.post('/articles/get_content', {article_id: "#{@article.id}"}, function(data){
         if (data.status){
-           $(".panel-body").html(data.message);
+           $(".show-article-content").html(data.message);
         }
       });
   });

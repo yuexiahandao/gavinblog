@@ -14,7 +14,8 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require bootstrap
-//= require twitter/bootstrap/rails/confirm
+//= require dialog/confirm
+//= require dialog/blackbox.min.js
 //= require html5shiv.min.js
 //= require respond.min.js
 //= require markdown-toolbar/markdown-toolbar
